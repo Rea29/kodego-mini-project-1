@@ -1,252 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shanica Snack House</title>
-    <link rel="short cut icon" type="image" href="./images/logo.jpg" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <!-- or -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-  </head>
-  <body>
-    <div class="home-section">
-      <nav
-        class="navbar sticky-top navbar-expand-lg"
-        style="background-color: #75b4e0"
-        id="navbar"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="logo"
-            ><img src="./images/logo1.jpg" alt="" width="30px" />Shanica<span
-              >Snack<span>House</span></span
-            ></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span><i class="fa-solid fa-bars"></i></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
-                  id="first child"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#menu">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#offer">Offers</a>
-              </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <button type="button" class="btn">Login</button>
-                  <button type="button" class="btn">SignUp</button>
-                </a>
-              </li>
-            </ul>
-            <!-- <form class="d-flex">
-              <div class="icons">
-                <a class="dropdown-item" href="#">
-                  <button type="button" class="btn btn-info">Login</button>
-                </a>
-              </div>
-              <div class="icons">
-                <a class="dropdown-item" href="#">
-                  <button type="button" class="btn btn-success">SignUp</button>
-                </a>
-              </div>
-            </form> -->
-          </div>
-        </div>
-      </nav>
-      <section class="home" id="home">
-        <div class="content">
-          <h1>
-            Don't focus on <span>How much you EAT</span> focus on What you EAT
-          </h1>
-          <p>
-            Welcome to Shanica Snack House, where delicious treats await! Our
-            cozy corner is filled with the aroma of freshly baked goodies and
-            the sound of sizzling snacks. Whether you're craving a burgers, a
-            milk shake, or a rice meals, we've got you covered. Sit back, relax,
-            and indulge in our scrumptious delights. At shanica Snack House,
-            every bite is a taste of happiness.
-          </p>
-        </div>
-        <div class="img">
-          <img src="./images/finalburger-removebg-preview.png" alt="" />
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shanica Snack House</title>
+  <link rel="shortcut icon" type="image" href="./images/logo.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+
+
+  <!-- Custom CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+</head>
+<style>
+  .navbar-brand img {
+    width: auto !important;
+    height: 80px;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .ml-auto .btn-login {
+    margin-right: 30px;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./images/final logo.jpg" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#menu">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact Us</a>
+        </li>
+      </ul>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section class="Menu" id="menu">
-      <h2 class="heading" id="menu"> OUR MENU</h2>
+    <div class="ml-auto">
+      <a href="/login">
+        <button class="btn btn-primary btn-login">Login</button>
+      </a>
+
+    </div>
+  </nav>
+  <section class="home" id="home">
+    <div class="content">
+      <h1>
+        Don't focus on <span>How much you EAT</span> focus on What you EAT
+      </h1>
       <br>
-      <div class="card">
-        <img src="./images/miloblast.jpg" class="card-img-top" alt="...">
-      
-        <div class="card-body">
-          <h5 class="card-title">Milo Blast</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      
-      <div class="card" aria-hidden="true">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title placeholder-glow">
-            <span class="placeholder col-6"></span>
-          </h5>
-          <p class="card-text placeholder-glow">
-            <span class="placeholder col-7"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-6"></span>
-            <span class="placeholder col-8"></span>
-          </p>
-          <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
-        </div>
-      </div>
-      <!-- <div class="row  row-cols-1 row-cols-md-2 g-4" style="width: 50rem;">
-        <div class="col">
-          <div class="card card text-bg-primary mb-3" >
-            <img src="images/Burger.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Burgers</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 50rem;">
-        <div class="col">
-          <div class="card">
-            <img src="./images/miloblast.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 50rem;">
-        <div class="col">
-          <div class="card">
-            <img src="images/sisilog.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4"style="width: 50rem;">
-        <div class="col">
-          <div class="card">
-            <img src="images/siomairice.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div> -->
-      <!-- <div class="card" style="width: 18rem">
-        <img src="./images/Burger.jpg" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img src="./images/miloblast.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="./images/siomairice.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </p>
-            </div> -->
-    </section>
-    <div class="container" id="top icons">
-      <h1 class="heading" id="offer">Offers</h1>
-      <div class="row">
-        <div class="col-md-3 py-3 py-md-0" style="text-align: center">
-          <i class="bx bx-wifi" style="font-size: 10em"></i>
-          <h3>Free Wifi</h3>
-        </div>
-        <div class="col-md-3 py-3 py-md-0" style="text-align: center">
-          <i class="bx bx-wifi" style="font-size: 10em"></i>
-          <h3>Free Wifi</h3>
-        </div>
-        <div class="col-md-3 py-3 py-md-0" style="text-align: center">
-          <i class="bx bx-wifi" style="font-size: 10em"></i>
-          <h3>Free Wifi</h3>
-        </div>
-      </div>
-    </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+      <h1>Uniqueness makes<span> everything stand out</span></h1>
+      <br>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <p>
+        Welcome to Shanica Snack House, where delicious treats await! Our
+        cozy corner is filled with the aroma of freshly baked goodies and
+        the sound of sizzling snacks. Whether you're craving a burgers, a
+        milk shake, or a rice meals, we've got you covered. Sit back, relax,
+        and indulge in our scrumptious delights. At shanica Snack House,
+        every bite is a taste of happiness.
+      </p>
+
+    </div>
+    <div class="img">
+      <img src="./images/finalburger-removebg-preview.png" alt="" />
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <i id="menu"></i>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="Menu">
+    <h2 class="heading" id="menu"> OUR MENU</h2>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card-deck">
+            <div class="card" data-clickable="true" data-href="#">
+              <img class="card-img-top" src="./images/burgers.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">burgers</h5>
+                <span>&#8369;99.00</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Burger buns,Pork Patties, Lettuce, Pepino, Ketchup,egg,Cheese
+                  sauce, tomatoes, hotsauce (Optional).</small>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Add to Card</button>
+
+                </div>
+              </div>
+            </div>
+            <span></span>
+
+
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-deck">
+            <div class="card" data-clickable="true" data-href="#">
+              <img class="card-img-top" src="./images/hotdogoverload.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hotdog OverLoad</h5>
+                <span>&#8369;69.00</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Hotdog buns, Hotdog, ketchup, cheese,mayonesse, cheese sauce, hot sauce
+                  (Optional)</small>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Add to Card</button>
+
+                </div>
+              </div>
+            </div>
+            <span></span>
+
+
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card-deck">
+            <div class="card" data-clickable="true" data-href="#">
+              <img class="card-img-top" src="./images/lumpiasilog.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">LumpiaSilog</h5>
+                <span>&#8369;79.00</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Pork Lumpia shanghai, 1 cup of java rice, egg , Pepino and tomatoes
+                  (Optional)</small>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Add to Card</button>
+
+                </div>
+              </div>
+            </div>
+            <span></span>
+
+
+
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card-deck">
+            <div class="card" data-clickable="true" data-href="#">
+              <img class="card-img-top" src="./images/siomairice.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Siomai Rice</h5>
+                <span>&#8369;79.00</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Siomai, java rice, fried egg, mayonesse, ketchup, onion leaves
+                  (optional)</small>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Add to Card</button>
+
+                </div>
+              </div>
+            </div>
+            <span></span>
+
+
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-deck">
+            <div class="card" data-clickable="true" data-href="#">
+              <img class="card-img-top" src="./images/nachos.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Nachos</h5>
+                <span>&#8369;100.00</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Nachos Chips, pork giniling, cabbage, pepino, cheese sauce, mayonesse</small>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Add to Card</button>
+
+                </div>
+              </div>
+            </div>
+            <span></span>
+
+
+
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card-deck">
+            <div class="card" data-clickable="true" data-href="#">
+              <img class="card-img-top" src="./images/miloblast.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Milo Blast</h5>
+                <span>&#8369;80.00</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Milo powder, Condense milk, evaporated Milk, Sugar, vanilla Ice cream</small>
+                <div class="d-grid gap-2 d-md-block">
+                  <button class="btn btn-primary" type="button">Add to Card</button>
+
+                </div>
+              </div>
+            </div>
+            <span></span>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <i id="about"></i>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section class="about">
+    <br>
+    <div class="container my-5" id="abouttextstyle">
+      <div class="row">
+        <div class="col-md-6 p-4 p-sm-5 order-2 order-sm-1">
+          <small class="text-uppercase" style="color: #9B5DE5;"></small>
+          <h1 class="h2 mb-4" style="font-weight: 600;">Our <span style="color: #9B5DE5;">mission</span></h1>
+          <p class="text-secondary" style="line-height: 2;">Our mission is to provide customers with one of a kind
+            experience when ordering foods in a accesible location and offers affordable but delicious snacks to
+            customers. Uniqueness makes everything stand out and as for the Shanica Snack house, good quality of
+            nutritious food depends as well to the ambiance and the environment of the customers. The enterprise wants
+            to serve a good nutritious food, at a good price and a good place. <br>
+          <h1 class="h2 mb-4" style="font-weight: 600;">Our <span style="color: #9B5DE5;">Vision</span></h1>
+          <p class="text-secondary" style="line-height: 2;"> Our vision is to give nutritious food snack while enjoying
+            the ambiance of the store and also to see the customer satisfaction and appeals to every product the store
+            produce and to be a competitive market in the food line.</p>
+
+        </div>
+        <div class="col-md-6 p-0 text-center order-1 order-sm-2">
+          <img src="images/snackhouse.jpg" class="w-100" alt="">
+        </div>
+
+        <div class="col-md-6 p-0 text-center">
+          <img src="images/final logo.jpg" class="w-100" alt="">
+        </div>
+        <div class="col-md-6 p-4 p-sm-4">
+          <small class="text-uppercase" style="color: #9B5DE5;"></small>
+          <h1 class="h2 mb-4" style="font-weight: 600;">About<span style="color: #9B5DE5;"> us</span></h1>
+          <p class="text-secondary" style="line-height: 2;"> The Shanica snack house is a small food business that will
+            be launched on the year 2020. The business was owned by 3 individuals and decided to be Partners. Having a
+            contribution of 5000 pesos individually to settle their source of capital amounting to 10000 pesos. First we
+            open a burgers only. When the capital is enough we decide to open a new menu which is rice meals, milk
+            shake, nachos and other fingerFoods. Since we are home made people love our burgers for sure. <br>
+            The Establishment will be located at Hedriana St., Purok 1, Pavia, Iloilo and the risk is relatively neutral
+            as the location has strengths in terms of attracting customers. </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <i id="contact"></i>
+  <br>
+  <br>
+  <br>
+
+  <div>
+    <div class="contact-form-wrapper d-flex justify-content-center">
+      <form action="#" class="contact-form">
+        <h5 class="title">Contact us</h5>
+        <p class="description">Feel free to contact us if you need any assistance, any help or another question.
+        </p>
+        <div>
+          <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name"
+            required>
+        </div>
+        <div>
+          <input type="email" class="form-control rounded border-white mb-3 form-input" placeholder="Email" required>
+        </div>
+        <div>
+          <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30"
+            placeholder="Message" required></textarea>
+        </div>
+        <div class="submit-button-wrapper">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
+
+</body>
+
 </html>
